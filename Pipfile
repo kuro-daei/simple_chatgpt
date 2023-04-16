@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+python-dotenv = "*"
+streamlit = "*"
+pandas = "*"
+
+[dev-packages]
+flake8 = "*"
+autopep8 = "*"
+pylint = "*"
+black = "*"
+
+[requires]
+python_version = "3.11"
+
+[scripts]
+start = "python -m streamlit run src/main.py"
